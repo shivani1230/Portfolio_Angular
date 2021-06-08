@@ -1,0 +1,31 @@
+.p-profile{
+    background: url('/assets/img/shivani.jpg');
+    height: 495px;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: 7%;
+}
+#para{
+    margin-top: 3%;
+}
+.pdesc{
+    color:darkgrey;
+}
+.head{
+    background-color: #acacac;
+    border: 2px solid gray;
+    color: white;
+}
+.carousel{
+    margin-top: 12%;
+}
+.footer{
+    margin-top: 17%;
+    margin-left: 20%;
+    font-weight: bold;
+}
+.footer i{
+    color: red;
+}

@@ -1,0 +1,77 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="p-profile"></div>
+            </div>
+            <div class="col-sm-6 mt-4">
+                <h2>Internship Details</h2>
+                <div>
+                <p>This is 6 months internship period. The first project
+                    done was an "SMS App" named "HiBiz". This was done using Angular,
+                    Node.js, Ionic, MySQL, MySQLite, Firebase/Firestore. The front-end part 
+                    of app which include Ionic,Css & backend part for the admin panel which
+                    includes Angular, MySQL, Node.js, Firebase was handled by me. This project was 
+                    done in about 2.5 months period.
+                </p>
+                </div>
+
+                <!-- <div class="skills-bar">
+                    <h2>Skills</h2>
+                    <div class="bar">
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-bar html" ><span></span></div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-bar css"><span></span></div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>Angular</span>
+                        </div>
+                        <div class="progress-bar angular"><span></span></div>
+                    </div>
+                </div> -->
+                
+                <h2>Skills</h2>
+                <div style="margin-top:10%;">
+                    <circle-progress [title]="title"  [subtitle]="subtitle" [percent]="per" [space]="-10" [radius]="70" [outerStrokeWidth]="10"
+                      [innerStrokeWidth]="10" [outerStrokeColor]="'#0000ff'" [innerStrokeColor]="'#66ffff'" [animation]="true"
+                      [animationDuration]="1000" >
+                    </circle-progress>
+                    <circle-progress [title]="title2" [subtitle]="subtitle2"  [percent]="per2" [space]="-10" [radius]="70" [outerStrokeWidth]="10"
+                      [innerStrokeWidth]="10" [outerStrokeColor]="'#0000ff'" [innerStrokeColor]="'#66ffff'" [animation]="true"
+                      [animationDuration]="1000" >
+                    </circle-progress>
+                    <circle-progress [title]="title3" [subtitle]="subtitle3"  [percent]="per3" [space]="-10" [radius]="70" [outerStrokeWidth]="10"
+                      [innerStrokeWidth]="10" [outerStrokeColor]="'#0000ff'" [innerStrokeColor]="'#66ffff'" [animation]="true"
+                      [animationDuration]="1000" >
+                    </circle-progress>
+                  </div>
+
+                  <div class="footer">
+                    <label>&copy; Copyright 2021 By Shivani Amrutkar <i class="fa fa-heart"></i></label>
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
+</section>
+</html>

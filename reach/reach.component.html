@@ -1,0 +1,91 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="p-profile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h3>Contact</h3>
+                <form [formGroup]='register' #form="ngForm">
+                    <span>Want to work with me?</span>
+                    <div class="form-group">
+                      
+                        <label for="exampleInputName">Your Name</label>
+                      <input type="text" class="form-control" formControlName="name"
+                      id="exampleInputName" placeholder="Enter your name">
+                      <div *ngFor="let e of errMsg.name">
+                        <ng-container *ngIf="register.get('name').touched && !register.get('name').valid 
+                            && register.get('name').hasError(e.type)">
+                          <small class="error-message text-red-600">{{e.message}}</small>
+                        </ng-container>
+                      </div>
+                        
+                      <label for="exampleInputContact">Your Contact</label>
+                      <input type="number" class="form-control" formControlName="contact"
+                       id="exampleInputContact" placeholder="Enter your mobile number">
+                       <div *ngFor="let e of errMsg.contact">
+                        <ng-container *ngIf="register.get('contact').touched && !register.get('contact').valid 
+                            && register.get('contact').hasError(e.type)">
+                          <small class="error-message text-red-600">{{e.message}}</small>
+                        </ng-container>
+                      </div>
+
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" formControlName="email" 
+                      id="exampleInputEmail1" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div *ngFor="let e of errMsg.email">
+                        <ng-container *ngIf="register.get('email').touched && !register.get('email').valid 
+                            && register.get('email').hasError(e.type)">
+                          <small class="error-message text-red-600">{{e.message}}</small>
+                        </ng-container>
+                      </div>
+
+
+                    <button type="submit" class="btn" (click)="registered()">Submit</button>
+                  </form>
+
+                <div>
+                    <button class="btn1" style="width: 20%;">
+                        Email 
+                        <i class="fa fa-envelope"></i>
+                    </button>
+
+                    <button class="btn2" style="width: 20%;">
+                        LinkedIn 
+                        <i class="fa fa-linkedin"></i>
+                    </button>
+
+                    <button class="btn3" style="width: 20%;">
+                        GitHub 
+                        <i class="fa fa-github"></i>
+                    </button>
+            
+            </div>
+
+            
+        <div class="footer">
+            <label>&copy; Copyright 2021 By Shivani Amrutkar <i class="fa fa-heart"></i></label>
+        </div>
+
+        </div>
+
+        </div>
+    </div>
+</section>
+</html>

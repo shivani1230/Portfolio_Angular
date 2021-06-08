@@ -1,0 +1,154 @@
+.p-profile{
+    background: url('/assets/img/shivani.jpg');
+    height: 495px;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: 7%;
+    /* border: 2px solid; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.col-sm-5 .p-profile{
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+/* .p-profile span:nth-child(1){
+    top: 6%;
+    position: absolute;
+    left: 0;
+    width: 90%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #3e7079);
+    animation: animate 2s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.p-profile span:nth-child(2){
+    top: 0;
+    position: absolute;
+    right: 0;
+    width: 3px;
+    height: 50%;
+    background: linear-gradient(to bottom, transparent, #d82f19);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+.p-profile span:nth-child(3){
+    bottom: 7%;
+    position: absolute;
+    left: 0;
+    width: 90%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #a71ca0);
+    animation: animate3 2s linear infinite;
+}
+@keyframes animate3{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.p-profile span:nth-child(4){
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: 50%;
+    background: linear-gradient(to top, transparent, #28be4e);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate4{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+} */
+h3{
+    text-decoration: underline;
+    font-size: 40px;
+    margin-top: 3%;
+    color:darkorchid;
+}
+.col-sm-6 label{
+    font-weight: bold;
+    margin-top: 4%;
+    /* margin-bottom: 4%; */
+    margin-left: 10px;   
+}
+.btn{
+    background: white;
+    font-weight: bold;
+    color: #f9b205;
+    border: 2px solid #f9b205;
+}
+.btn:hover{
+ transition: 1s ease-in-out;
+ background: black;
+ border: 2px solid white;   
+ color: white;
+}
+.btn1, .btn2, .btn3{
+    background: white;
+    font-weight: bold;
+    color: #f9b205;
+    border: 2px solid #f9b205;
+    margin-top: 7%;
+    padding: 5px;
+    margin-left: 10%;
+}
+.btn1:hover{
+ transition: 1s ease-in-out;
+ background: red;
+ border: 2px solid white;   
+ color: white;
+}
+.btn2:hover{
+    transition: 1s ease-in-out;
+    background: royalblue;
+    border: 2px solid white;   
+    color: white;
+   }
+.btn3:hover{
+    transition: 1s ease-in-out;
+    background: linear-gradient(#66ff99,#00ffcc);
+    border: 2px solid white;   
+    color: white;
+   }
+.btn1 i{
+    color: navy;
+}
+.btn2 i{
+    color: navy;
+}
+.btn3 i{
+    color: navy;
+}
+.footer{
+    margin-top: 7%;
+    margin-left: 20%;
+    width: 100%;
+}
+.footer i{
+    color: red;
+}
